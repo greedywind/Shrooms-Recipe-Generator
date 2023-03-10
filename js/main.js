@@ -1,5 +1,3 @@
-// Sorry, this code is messy.
-
 $('#submit').on('click', function () {
 	var length = $('#length').val();
 	var width = $('#width').val();
