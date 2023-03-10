@@ -1,1 +1,205 @@
 
+/* Sorry, this code is messy. */
+
+body {
+  font-family: 'Red Hat Mono', monospace;
+}
+
+h1, h2, h3 {
+  margin: 1rem 0;
+  line-height: 1.25;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 5rem 0 .25rem 0;
+  font-weight: 600;
+}
+
+h1 + p {
+  margin-bottom: 3rem;
+  font-size: .875rem;
+}
+
+h2 {
+  font-size: 1.825rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  margin: .5rem 0;
+  font-weight: 600;
+}
+
+input {
+  margin: .5rem 0 1rem 0;
+}
+
+p {
+  margin: .5rem 0;
+  line-height: 1.5;
+}
+
+p.black {
+  color: #000 !important;
+}
+
+section {
+  margin: 0 0 2rem 0;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, .05);
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.grain, .substrate {
+  width: 50%;
+}
+
+.ingredients-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.ingredients-content > div div {
+  margin: 1.5rem 0;
+}
+
+.substrate div p:first-of-type {
+  font-weight: 600;
+  margin: .125rem 0;
+  color: #000;
+}
+
+.grain div p {
+  color: rgba(0, 0, 0, 0.4);
+  margin: .125rem 0;
+}
+
+.substrate div p {
+  color: rgba(0, 0, 0, 0.4);
+  margin: .125rem 0;
+}
+
+.grain div p:first-of-type {
+  font-weight: 600;
+  margin: .125rem 0;
+  color: #000;
+}
+
+.dimensions input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  width: 50%;
+}
+
+input:focus {
+  border-color: #afafaf;
+  outline: none;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: FireBrick;
+  cursor: pointer;
+  margin: .5rem 0;
+  font-family: 'Red Hat Mono', monospace;
+}
+
+footer {
+  font-size: .75rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: .5rem 2rem;
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .ingredients-content {
+    flex-direction: column;
+  }
+
+  .substrate {
+    margin-bottom: 2rem;
+  }
+
+  .grain, .substrate {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .dimensions {
+    margin: 1rem 0 3rem 0;
+  }
+
+  input {
+    width: calc(100% - 1.3rem);
+  }
+
+  .ingredients {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+    margin-bottom: 1.375rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
