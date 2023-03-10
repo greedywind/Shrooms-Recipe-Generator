@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>🍄 Recipe Generator</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+ 	</head>
+
+	<body>
+
+		<section class="container">
+			<h1>🍄 Recipe Generator</h1>
+			<p>Adapted from the book <a href="https://www.amazon.com/Magic-Mushroom-Growers-Simple-Cultivation/dp/0992558409" target="_blank">Magic Mushroom Grower's Guide</a></p>
+
+			<section class="dimensions">
+				<h2>Container Dimensions</h2>
+				<label for="length">Length (cm)</label>
+	    	<input type="text" id="length" placeholder="" value="50"/>
+				<label for="length">Width (cm)</label>
+				<input type="text" id="width" placeholder="" value="30"/>
+				<label for="length">Substrate Depth (cm)</label>
+				<input type="text" id="depth" placeholder="" value="8"/>
+	    	<button id="submit" type="button">Submit</button>
+			</section>
+
+			<section class="ingredients">
+				<h2>Ingredients</h2>
+				<div class="ingredients-content">
+					<div class="substrate">
+						<h3>Substrate</h3>
+						<div>
+							<p>Horse Manure (c)</p>
+							<p id="manure">0</p>
+						</div>
+						<div>
+							<p>Coconut Fiber (c)</p>
+							<p id="fiber">0</p>
+						</div>
+						<div>
+							<p>Vermiculite (c)</p>
+							<p id="vermiculite">0</p>
+						</div>
+						<div>
+							<p>Spent Coffee Grounds (c)</p>
+							<p id="coffee">0</p>
+						</div>
+						<div>
+							<p>Gypsum (tbsp)</p>
+							<p id="gypsum">0</p>
+						</div>
+						<div>
+							<p>Water (c)</p>
+							<p id="water">0</p>
+						</div>
+					</div>
+					<div class="grain">
+						<h3>Grain</h3>
+						<div>
+							<p>Dry Grain (c)</p>
+							<p id="dry">0</p>
+						</div>
+						<div>
+							<p>Gypsum (tbsp)</p>
+							<p id="gypsum1">0</p>
+						</div>
+						<div>
+							<p>Brewed Coffee (c)</p>
+							<p id="brewed">0</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+	</body>
+</html>
